@@ -54,7 +54,7 @@ small {
     border-radius: 12px;
     gap: 10px;
     overflow: hidden;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 label {
@@ -108,6 +108,8 @@ label {
     height: 30px;
     border: none;
     font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
     color: var(--Very-dark-cyan)
 }
 
@@ -143,7 +145,7 @@ label {
     border-radius: 5px;
     color: var(--White);
     font-family: 'Manrope', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
 }
 
@@ -159,12 +161,13 @@ label {
     border-radius: 5px;
     border: none;
     font-size: 20px;
+    font-weight: 700;
     color: var(--Very-dark-cyan)
 }
 
 .percentage-btns button.active {
     background-color: var(--Strong-cyan);
-    color: var(--White);
+    color: var(--Very-dark-cyan);
 }
 
 .tips-amount {
@@ -189,7 +192,7 @@ label {
 
 .amount p,
 .total p {
-    margin: 0;
+    margin-top: 15px;
     color: var(--Strong-cyan);
     font-family: 'Manrope', sans-serif;
     font-weight: bold;
@@ -262,14 +265,14 @@ label {
 
         .input-icon {
             position: absolute;
-            top: 18%;
+            top: 19%;
             left: 40px;
             transform: translateY(-50%);
         }
         .person-icon {
             position: absolute;
-            top: 89%;
-            left: 10%;
+            top: 88%;
+            left: 14%;
             transform: translateY(-50%);
         }
 
