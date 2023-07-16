@@ -54,6 +54,7 @@ small {
     border-radius: 12px;
     gap: 10px;
     overflow: hidden;
+    padding: 20px;
 }
 
 label {
@@ -103,7 +104,7 @@ label {
 .input #bill,
 .input #people {
     display: block;
-    width: 300px;
+    width: 100%;
     height: 30px;
     border: none;
     font-size: 20px;
@@ -171,10 +172,11 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
 }
 .showcase .tips-amount {
-    padding: 30px;
-    margin: 0px 20px;
+    /* padding: 30px; */
+    /* margin: 0px 20px; */
     background-color: var(--Very-dark-cyan);
     border-radius: 10px;
 }
@@ -223,61 +225,41 @@ label {
 
 
 /* Styles for smaller screens */
-@media (max-width: 768px) {
+ @media screen and (max-width: 480px)
+ {
         .container {
-            display: flex;
-            justify-content: center;
+            /* display: flex; */
+            /* justify-content: center; */
             align-items: center;
             height: 110vh;
-            padding: 20px;
+            padding: 0 20px 20px 20px;
         }
 
         .showcase {
-            background-color: var(--White);
-            width: 100%;
-            max-width: 730px;
-            height: fit-content;
-            padding-bottom: 20px;
+            /* width: 100%; */
+            /* max-width: 730px; */
             display: flex;
             flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            border-radius: 12px;
-            overflow: hidden;
+            /* align-items: center; */
+            /* gap: 20px; */
+            /* border-radius: 12px; */
+            /* overflow: hidden; */
+            padding: 20px;
         }
 
         .tips-amount {
-            flex-grow: 1;
+            /* flex-grow: 1;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .amount,
-        .total {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .amount p,
-        .total p {
-            margin: 0;
-        }
-
-        .tips-amount button {
-            margin-top: auto;
+            justify-content: space-between; */
+            padding: 20px;
+            margin: 20px;
         }
 
         .input .percentage-btns {
             grid-template-columns: repeat(2, 1fr);
         }
 
-       .input #custom {
-            width: 100%;
-            margin-top: 10px;
-            background-color: var(--Very-light-grayish-cyan);
-        }  
-        
         .input-icon {
             position: absolute;
             top: 18%;
@@ -293,27 +275,12 @@ label {
 
         .input #bill,
         .input #people {
-            display: block;
-            width: 360px;
-            height: 30px;
-            border: none;
-            font-size: 20px;
-            background-color: var(--Very-light-grayish-cyan);
-        }
-
-        #reset-btn {
-            padding: 8px 140px;
-            margin-top: auto;
-            border: none;
-            border-radius: 5px;
-            background-color: var(--Strong-cyan);
-            color: var(--Very-dark-cyan);
-            font-family: 'Manrope', sans-serif;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .input .btn {
-            margin: 30px 0;
+            /* display: block; */
+            width: 100%;
+            max-width: 730px;
+            /* height: 30px; */
+            /* border: none; */
+            /* font-size: 20px; */
+            /* background-color: var(--Very-light-grayish-cyan); */
         }
 }
